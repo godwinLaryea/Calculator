@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="calculator-container">
+    <div>
+      <input readonly id="display-screen">
+    </div>
+    <div class="buttons-container">
+      <button onclick="clearDisplay()" class="cal-btn">AC</button>
+      <button onclick="appendToDisplay('+')" class="cal-btn">+/-</button>
+      <button onclick="appendToDisplay('%')" class="cal-btn">%</button>
+      <button onclick="appendToDisplay('/')" class="cal-btn btn-operator">/</button>
+      <button onclick="appendToDisplay('7')" class="cal-btn">7</button>
+      <button onclick="appendToDisplay('8')" class="cal-btn">8</button>
+      <button onclick="appendToDisplay('9')" class="cal-btn">9</button>
+      <button onclick="appendToDisplay('*')" class="cal-btn btn-operator">x</button>
+      <button onclick="appendToDisplay('4')" class="cal-btn">4</button>
+      <button onclick="appendToDisplay('5')" class="cal-btn example">5</button>
+      <button onclick="appendToDisplay('6')" class="cal-btn">6</button>
+      <button onclick="appendToDisplay('-')" class="cal-btn btn-operator">-</button>
+      <button onclick="appendToDisplay('1')" class="cal-btn">1</button>
+      <button onclick="appendToDisplay('2')" class="cal-btn">2</button>
+      <button onclick="appendToDisplay('3')" class="cal-btn">3</button>
+      <button onclick="appendToDisplay('+')" class="cal-btn btn-operator">+</button>
+      <button onclick="appendToDisplay('0')" class="cal-btn">0</button>
+      <button onclick="appendToDisplay('.')" class="cal-btn">.</button>
+      <button onclick="calcFunction()" class="cal-btn btn-operator">=</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
